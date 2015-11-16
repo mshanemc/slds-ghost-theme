@@ -14,6 +14,7 @@
   "use strict";
 
   $.fn.fitVids = function( options ) {
+
     var settings = {
       customSelector: null
     };

@@ -1,3 +1,4 @@
+
 .slds-text-longform h1,
 .slds-text-longform h2,
 .slds-text-longform h3,
@@ -26,4 +27,9 @@
 
 .slds-text-longform img {
 	width:100%;
+}
+
+.slds-text-longform, .excerpt {
+	overflow-wrap: break-word;
+  	word-wrap: break-word;
 }

@@ -1,9 +1,9 @@
 {{#foreach posts}}
 <article class="slds-tile slds-m-bottom--large">
-  <p class="slds-tile__title slds-truncate slds-text-heading--small" ><a href="{{url}}">{{{title}}}</a></p>
+  <p class="slds-tile__title slds-text-heading--small" ><a href="{{url}}">{{{title}}}</a></p>
   
   <div class="slds-tile__detail slds-text-body--regular">
-    <p>
+    <p class="excerpt">
         {{excerpt words="90"}}
         <a class="read-more" href="{{url}}">&raquo;</a>
     </p>

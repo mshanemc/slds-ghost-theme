@@ -11,7 +11,7 @@ the {body} of the default.hbs template, which contains our header/footer. }}
 	<div class="slds-grid">
 		<div class="slds-col slds-has-flexi-truncate">		
 			<div class="slds-media">
-				<div class="slds-media__figure">
+				<div class="slds-media__figure slds-max-small-hide">
 					<svg aria-hidden="true" class="slds-icon slds-icon--large slds-icon-standard-user">
 						<use xlink:href="/assets/icons/action-sprite/svg/symbols.svg#share_post"></use>
 					</svg>
@@ -20,15 +20,15 @@ the {body} of the default.hbs template, which contains our header/footer. }}
 					<nav class="slds-m-bottom--xx-small" role="navigation">
 						<p id="bread-crumb-label" class="slds-assistive-text">You are here:</p>
 						<ol class="slds-breadcrumb slds-list--horizontal" aria-labelledby="bread-crumb-label">
-							<li class="slds-list__item slds-text-heading--label"><a href="/">Unnecessary Use of Force</a></li>
+							<li class="slds-list__item slds-text-heading--label slds-max-small-hide" ><a href="/">Unnecessary Use of Force</a></li>
 							<li class="slds-list__item slds-text-heading--label"><a href="/">Posts</a></li>
 						</ol>
 					</nav>
-					<h1 class="slds-text-heading--medium slds-m-right--small slds-truncate slds-align-middle" >{{title}}</h1>			
+					<h1 class="slds-text-heading--medium slds-m-right--small slds-align-middle" >{{title}}</h1>			
 				</div>
 			</div>
 		</div>
-		<div class="slds-col slds-no-flex slds-align-bottom">
+		<div class="slds-col slds-no-flex slds-align-bottom slds-max-small-hide">
 			<div class="slds-button-group" role="group">
 				<a class="slds-button slds-button--neutral" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
 				onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
