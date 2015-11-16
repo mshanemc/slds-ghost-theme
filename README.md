@@ -1,12 +1,17 @@
-# Casper
+# SLDS Ghost Theme
 
-The default theme for [Ghost](http://github.com/tryghost/ghost/).
+A theme for [Ghost](http://github.com/tryghost/ghost/) based on the [Salesforce Lightning Design System](https://lightningdesignsystem.com).
 
-To download, visit the [releases](https://github.com/TryGhost/Casper/releases) page.
+To install, clone the repo and add it to the /themes folder of your Ghost directory.
 
-## Copyright & License
+Known issues:
 
-Copyright (c) 2013-2015 Ghost Foundation - Released under the MIT License.
+* Mobile responsiveness is kinda sketchy
+* no support for images (either post or tags)
+* uses blog header/author but not the image for that
+* completely ignores the navigation you set up in Ghost
+
+Copyright (c) 2013-2015 Shane McLaughlin - Released under the MIT License.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
