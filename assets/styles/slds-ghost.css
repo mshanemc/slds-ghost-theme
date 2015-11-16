@@ -1,0 +1,29 @@
+.slds-text-longform h1,
+.slds-text-longform h2,
+.slds-text-longform h3,
+.slds-text-longform h4,
+.slds-text-longform h5,
+.slds-text-longform h6 {
+	color:#F88962;
+	margin-top:3rem;
+}
+
+.slds-text-longform h4 {
+  font-size: 1.3em;
+}
+
+.slds-text-longform h3 {
+  font-size: 1.5em;
+}
+
+.slds-text-longform h2 {
+  font-size: 1.7em;
+}
+
+.slds-text-longform code, .slds-text-longform kbd, .slds-text-longform pre, .slds-text-longform samp {
+	background-color: #CFD7E6;
+}
+
+.slds-text-longform img {
+	width:100%;
+}

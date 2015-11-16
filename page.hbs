@@ -1,0 +1,51 @@
+{{!< default}}
+
+{{! This is a page template. A page outputs content just like any other post, and has all the same
+    attributes by default, but you can also customise it to behave differently if you prefer. }}
+
+{{! Everything inside the #post tags pulls data from the page }}
+{{#post}}
+
+<div class="slds-page-header" role="banner">
+    <nav class="slds-m-bottom--xx-small" role="navigation">
+        <p id="bread-crumb-label" class="slds-assistive-text">You are here:</p>
+        <ol class="slds-breadcrumb slds-list--horizontal" aria-labelledby="bread-crumb-label">
+            <li class="slds-list__item slds-text-heading--label"><a href="/">Unnecessary Use of Force</a></li>
+            <li class="slds-list__item slds-text-heading--label"><a href="/">Posts</a></li>
+        </ol>
+    </nav>
+    <div class="slds-grid">
+        <div class="slds-col slds-has-flexi-truncate">
+            <h1 class="slds-text-heading--medium slds-truncate" >{{title}}</h1>
+        </div>
+        <div class="slds-col slds-no-flex slds-align-bottom">
+            <div class="slds-grid">
+                <div class="slds-button-group slds-button-space-left">
+                    <a class="slds-button slds-button--icon-border slds-not-selected" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                        <svg aria-hidden="true" class="slds-button__icon">
+                            <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#like"></use>
+                        </svg>
+                        <span class="slds-assistive-text">Share on Facebook</span>
+                    </a>
+                    <a href="https://twitter.com/intent/tweet?text={{encode title}}&amp;url={{url absolute="true"}}"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" class="slds-button slds-button--icon-border slds-not-selected">
+                        <svg aria-hidden="true" class="slds-button__icon">
+                            <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#retweet"></use>
+                        </svg>
+                        <span class="slds-assistive-text">Tweet</span>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <p class="slds-text-body--small slds-m-top--x-small"><time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time> {{tags prefix=" on "}}</p>
+</div>
+
+<section class="slds-m-around--large slds-text-longform slds-text-heading--small">
+    {{content}}
+</section>
+{{/post}}
